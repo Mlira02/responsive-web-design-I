@@ -65,6 +65,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     margin-top: 1.5rem;
+    align-items: center;
 }
 
 a {
@@ -73,11 +74,12 @@ a {
 }
 
 .container1 {
+    border-bottom: 2px solid black;
     display: flex;
     justify-content: space-evenly;
+    padding: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-bottom: 2px solid black;
 }
 
 .words {
@@ -141,6 +143,15 @@ button {
     width: 0;
 }
 
+.logo {
+    order: -1;
+
+}
+
+nav {
+    flex-wrap: wrap;
+}
+
 .words {
     margin-bottom: 2rem;
 }
@@ -159,14 +170,15 @@ button {
     margin-bottom: 2rem;
 }
 
-nav {
-    align-items: center;
+nav, a {
     flex-direction: column;
+    align-items: center;
 }
 
 a {
-    border: 1px solid grey;
-    
+    border-block-end: 1px solid lightgrey;
+    align-items: stretch;
+
 }
 
 }
